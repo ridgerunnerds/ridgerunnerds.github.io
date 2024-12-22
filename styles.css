@@ -1,0 +1,90 @@
+:root {
+  /* Brand Colors derived from the reference image */
+  --primary-blue: #00a3ff;
+  --secondary-blue: #0066cc;
+  --dark-gray: #1a1a1a;
+  --light-gray: #f5f5f5;
+  --accent-white: #ffffff;
+  
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+/* Navigation Styles */
+.nav-container {
+  background: linear-gradient(90deg, var(--dark-gray) 0%, var(--secondary-blue) 100%);
+  padding: 1rem 2rem;
+}
+
+.nav-link {
+  color: var(--accent-white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-blue);
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--secondary-blue) 100%);
+  color: var(--accent-white);
+  padding: 4rem 2rem;
+}
+
+/* Service Cards */
+.service-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-white);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--accent-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-blue);
+}
+
+/* Section Headers */
+.section-header {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-blue);
+}
